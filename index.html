@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="cloud-sun-solid.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/67fbfbee6d.js" crossorigin="anonymous"></script>
+    <title>A weather website project by gpeilivanidis</title>
+    <meta name="description" content="A minimal weather website, providing accurate prediction weather data all around the world, in over 200,000 locations! Information about temperatures, humidity and wind. Weather predictions for the whole week.">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo"> <a href="index.html"> <i class="fa-solid fa-cloud-sun"></i> </a></div>
+            <div class="searchbar">
+                <input type="search" name="q" id="searchbar" placeholder='&#xf002 Search city...'>
+                <ul class="results"></ul>
+            </div>
+            <div class="settings-group">
+                <div class="theme clickable" title="theme"> <i class="fa-solid fa-sun"></i> </div>
+                <div class="settings clickable" title="settings"> <i class="fa-solid fa-gear"></i> 
+                </div>
+            </div>
+            
+        </nav>
+        <div class="settings-body">
+            <p>Units</p>
+            <label>
+                <input type="radio" name="unit" id="metric" value="metric" checked>
+                Metric
+            </label>
+            <label>
+                <input type="radio" name="unit" id="imperial" value="imperial">
+                Imperial
+            </label>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="main">
+                <div class="card main-card">
+                    <div class="real-feel" title="feels like">
+                        <div class="number">13</div>
+                        <div class="unit"><sup>o</sup>C</div>
+                    </div>
+                    <div class="weather" title="cloudy">
+                        <i class="fa-solid fa-cloud"></i>
+                    </div>
+                    <div class="city-date">
+                        <div class="city" title="city">New York</div>
+                        <div class="date" title="date">today</div>
+                    </div>
+                    <div class="info">
+                        <div class="minmax-temp">
+                            <div class="max-temp" title="max temperature">
+                                <i class="fa-solid fa-temperature-high"></i>
+                                <div class="number">13</div>
+                                <div class="unit"><sup>o</sup>C</div>
+                            </div>
+                            <div class="min-temp" title="min temperature">
+                                <i class="fa-solid fa-temperature-low"></i>
+                                <div class="number">6</div>
+                                <div class="unit"><sup>o</sup>C</div>
+                            </div>
+                        </div>
+                        <div class="rest">
+                            <div class="temp" title="temperature">
+                                <i class="fa-solid fa-temperature-half"></i>
+                                <div class="number">13</div>
+                                <div class="unit"><sup>o</sup>C</div>
+                            </div>
+                            <div class="humidity" title="humidity">
+                                <i class="fa-solid fa-droplet"></i>
+                                <div class="number">15</div>
+                                %
+                            </div>
+                            <div class="wind" title="wind">
+                                <i class="fa-solid fa-wind"></i>
+                                <div class="number">3</div>
+                                <div class="unit">m/s</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sub">
+                <div class="card sub-card clickable">
+                    <div class="visible">
+                        <div class="date" title="date">
+                            Sunday 20-2-2022
+                        </div>
+                        <div class="max-temp" title="max temperature">
+                                <i class="fa-solid fa-temperature-high"></i>
+                                <div class="number">13</div>
+                                <div class="unit"><sup>o</sup>C</div>
+                        </div>
+                        <div class="min-temp" title="min temperature">
+                                <i class="fa-solid fa-temperature-low"></i>
+                                <div class="number">6</div>
+                                <div class="unit"><sup>o</sup>C</div>
+                        </div>
+                        <div class="weather" title="clear">
+                            <i class="fa-solid fa-sun"></i>
+                        </div>
+                    </div>
+                    <div class="hidden">
+                        <div class="humidity" title="humidity">
+                                <i class="fa-solid fa-droplet"></i>
+                                <div class="number">15</div>
+                                %
+                            </div>
+                            <div class="wind" title="wind">
+                                <i class="fa-solid fa-wind"></i>
+                                <div class="number">3</div>
+                                <div class="unit">m/s</div>
+                            </div>
+                    </div>
+                </div>
+                <div class="card sub-card clickable">
+                    <div class="visible">
+                        <div class="date" title="date">
+                            Sunday 20-2-2022
+                        </div>
+                        <div class="max-temp" title="max temperature">
+                                <i class="fa-solid fa-temperature-high"></i>
+                                <div class="number">13</div>
+                                <div class="unit"><sup>o</sup>C</div>
+                        </div>
+                        <div class="min-temp" title="min temperature">
+                                <i class="fa-solid fa-temperature-low"></i>
+                                <div class="number">6</div>
+                                <div class="unit"><sup>o</sup>C</div>
+                        </div>
+                        <div class="weather" title="clear">
+                            <i class="fa-solid fa-sun"></i>
+                        </div>
+                    </div>
+                    <div class="hidden">
+                        <div class="humidity" title="humidity">
+                                <i class="fa-solid fa-droplet"></i>
+                                <div class="number">15</div>
+                                %
+                            </div>
+                            <div class="wind" title="wind">
+                                <i class="fa-solid fa-wind"></i>
+                                <div class="number">3</div>
+                                <div class="unit">m/s</div>
+                            </div>
+                    </div>
+                </div>
+                <div class="card sub-card clickable">
+                    <div class="visible">
+                        <div class="date" title="date">
+                            Sunday 20-2-2022
+                        </div>
+                        <div class="max-temp" title="max temperature">
+                                <i class="fa-solid fa-temperature-high"></i>
+                                <div class="number">13</div>
+                                <div class="unit"><sup>o</sup>C</div>
+                        </div>
+                        <div class="min-temp" title="min temperature">
+                                <i class="fa-solid fa-temperature-low"></i>
+                                <div class="number">6</div>
+                                <div class="unit"><sup>o</sup>C</div>
+                        </div>
+                        <div class="weather" title="clear">
+                            <i class="fa-solid fa-sun"></i>
+                        </div>
+                    </div>
+                    <div class="hidden">
+                        <div class="humidity" title="humidity">
+                                <i class="fa-solid fa-droplet"></i>
+                                <div class="number">15</div>
+                                %
+                            </div>
+                            <div class="wind" title="wind">
+                                <i class="fa-solid fa-wind"></i>
+                                <div class="number">3</div>
+                                <div class="unit">m/s</div>
+                            </div>
+                    </div>
+                </div>
+                <div class="card sub-card clickable">
+                    <div class="visible">
+                        <div class="date" title="date">
+                            Sunday 20-2-2022
+                        </div>
+                        <div class="max-temp" title="max temperature">
+                                <i class="fa-solid fa-temperature-high"></i>
+                                <div class="number">13</div>
+                                <div class="unit"><sup>o</sup>C</div>
+                        </div>
+                        <div class="min-temp" title="min temperature">
+                                <i class="fa-solid fa-temperature-low"></i>
+                                <div class="number">6</div>
+                                <div class="unit"><sup>o</sup>C</div>
+                        </div>
+                        <div class="weather" title="clear">
+                            <i class="fa-solid fa-sun"></i>
+                        </div>
+                    </div>
+                    <div class="hidden">
+                        <div class="humidity" title="humidity">
+                                <i class="fa-solid fa-droplet"></i>
+                                <div class="number">15</div>
+                                %
+                            </div>
+                            <div class="wind" title="wind">
+                                <i class="fa-solid fa-wind"></i>
+                                <div class="number">3</div>
+                                <div class="unit">m/s</div>
+                            </div>
+                    </div>
+                </div>
+                <div class="card sub-card clickable">
+                    <div class="visible">
+                        <div class="date" title="date">
+                            Sunday 20-2-2022
+                        </div>
+                        <div class="max-temp" title="max temperature">
+                                <i class="fa-solid fa-temperature-high"></i>
+                                <div class="number">13</div>
+                                <div class="unit"><sup>o</sup>C</div>
+                        </div>
+                        <div class="min-temp" title="min temperature">
+                                <i class="fa-solid fa-temperature-low"></i>
+                                <div class="number">6</div>
+                                <div class="unit"><sup>o</sup>C</div>
+                        </div>
+                        <div class="weather" title="clear">
+                            <i class="fa-solid fa-sun"></i>
+                        </div>
+                    </div>
+                    <div class="hidden">
+                        <div class="humidity" title="humidity">
+                                <i class="fa-solid fa-droplet"></i>
+                                <div class="number">15</div>
+                                %
+                            </div>
+                            <div class="wind" title="wind">
+                                <i class="fa-solid fa-wind"></i>
+                                <div class="number">3</div>
+                                <div class="unit">m/s</div>
+                            </div>
+                    </div>
+                </div>
+                <div class="card sub-card clickable">
+                    <div class="visible">
+                        <div class="date" title="date">
+                            Sunday 20-2-2022
+                        </div>
+                        <div class="max-temp" title="max temperature">
+                                <i class="fa-solid fa-temperature-high"></i>
+                                <div class="number">13</div>
+                                <div class="unit"><sup>o</sup>C</div>
+                        </div>
+                        <div class="min-temp" title="min temperature">
+                                <i class="fa-solid fa-temperature-low"></i>
+                                <div class="number">6</div>
+                                <div class="unit"><sup>o</sup>C</div>
+                        </div>
+                        <div class="weather" title="clear">
+                            <i class="fa-solid fa-sun"></i>
+                        </div>
+                    </div>
+                    <div class="hidden">
+                        <div class="humidity" title="humidity">
+                                <i class="fa-solid fa-droplet"></i>
+                                <div class="number">15</div>
+                                %
+                            </div>
+                            <div class="wind" title="wind">
+                                <i class="fa-solid fa-wind"></i>
+                                <div class="number">3</div>
+                                <div class="unit">m/s</div>
+                            </div>
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+    </main>
+    <footer>
+        <a href="https://github.com/gpeilivanidis?tab=repositories" target="_blank">
+            <i class="fa-brands fa-github"></i>
+            gpeilivanidis
+        </a>
+        <div>
+            All weather data are provided for free by <a href="https://openweathermap.org/">OpenWeather (TM)</a> through their One Call API under <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International licence (CC BY-SA 4.0)</a>.
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
